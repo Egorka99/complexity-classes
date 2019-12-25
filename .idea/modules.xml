@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/complexity-classes.iml" filepath="$PROJECT_DIR$/.idea/complexity-classes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/complexityClasses/complexityClasses.iml" filepath="$PROJECT_DIR$/complexityClasses/complexityClasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComplexityClasses.iml" filepath="$PROJECT_DIR$/ComplexityClasses.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="668.0" xmlns:con="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TabPane prefHeight="508.0" prefWidth="668.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Класс NP">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="209.0" layoutY="31.0" text="Выберите алгоритм класса NP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TabPane layoutX="-1.0" layoutY="78.0" prefHeight="402.0" prefWidth="676.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Задача о клике">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="619.0">
+                                       <children>
+                                          <TextField fx:id="cliqueVCountTextBox" layoutX="34.0" layoutY="61.0" />
+                                          <Label layoutX="17.0" layoutY="28.0" text="Введите количество вершин:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="21.0" layoutY="146.0" text="Укажите связи между ними:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="cliqueLinksTextBox" layoutX="31.0" layoutY="177.0" prefHeight="158.0" prefWidth="161.0" />
+                                          <Label layoutX="31.0" layoutY="105.0" text="Вершины:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cliqueVLabel" layoutX="109.0" layoutY="105.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView fx:id="cliqueResultTextBox" layoutX="379.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0" />
+                                          <Label layoutX="446.0" layoutY="38.0" text="Все клики:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="cliqueButton" layoutX="257.0" layoutY="156.0" mnemonicParsing="false" onAction="#cliqueButton_click" prefHeight="42.0" prefWidth="90.0" text="&gt;&gt;" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Задача коммивояжера">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="37.0" layoutY="58.0" text="Матрица расстояний:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="tspMatrixTextBox" layoutX="38.0" layoutY="90.0" prefHeight="131.0" prefWidth="136.0" />
+                                          <Label layoutX="302.0" layoutY="58.0" text="Способы обхода городов и общее расстояние:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView fx:id="tspResultListBox" layoutX="334.0" layoutY="100.0" prefHeight="200.0" prefWidth="258.0" />
+                                          <Button fx:id="tspButton" layoutX="68.0" layoutY="235.0" mnemonicParsing="false" onAction="#tspButton_click" prefHeight="22.0" prefWidth="77.0" text="Вычислить" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Класс P">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="-1.0" layoutY="92.0" prefHeight="387.0" prefWidth="668.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Является ли число простым?">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="260.0">
+                                       <children>
+                                          <Label layoutX="247.0" layoutY="46.0" text="Введите целое число">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="primeNumberTextBox" layoutX="260.0" layoutY="92.0" />
+                                          <Label layoutX="260.0" layoutY="186.0" text="Ответ:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="primeNumberResultMessage" layoutX="513.0" layoutY="245.0" prefHeight="27.0" prefWidth="10.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="primeNumberButton" layoutX="232.0" layoutY="139.0" mnemonicParsing="false" onAction="#primeNumberButton_click" text="Является ли число простым?">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <Label fx:id="test" layoutX="335.0" layoutY="241.0" text="Label1" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Каков кратчайший путь между двумя точками?">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="180.0" layoutY="53.0" text="Координаты двух точек на плоскости">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="minDistX1TextBox" layoutX="153.0" layoutY="130.0" prefHeight="25.0" prefWidth="64.0" />
+                                          <TextField fx:id="minDistY1TextBox" layoutX="239.0" layoutY="130.0" prefHeight="25.0" prefWidth="64.0" />
+                                          <TextField fx:id="minDistX2TextBox" layoutX="367.0" layoutY="130.0" prefHeight="25.0" prefWidth="64.0" />
+                                          <TextField fx:id="minDistY2TextBox" layoutX="452.0" layoutY="130.0" prefHeight="25.0" prefWidth="64.0" />
+                                          <Label layoutX="178.0" layoutY="100.0" text="x1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="264.0" layoutY="100.0" text="y1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="477.0" layoutY="100.0" text="y2">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="392.0" layoutY="100.0" text="x2">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="minDistButton" layoutX="187.0" layoutY="186.0" mnemonicParsing="false" onAction="#minDistButton_click" text="Посчитать кратчайший путь между двумя точками" />
+                                          <Label layoutX="277.0" layoutY="237.0" text="Ответ:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="minDistResultMessage" layoutX="335.0" layoutY="237.0" prefHeight="27.0" prefWidth="7.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Label layoutX="216.0" layoutY="38.0" text="Выберите алгоритм класса P">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
