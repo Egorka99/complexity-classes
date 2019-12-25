@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algoritms/np/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algoritms/np/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/META-INF/ComplexityClasses.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/CliqueTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/CliqueTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/TravellingSalesmanProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/np/TravellingSalesmanProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/p/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/algoritms/p/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/application/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComplexityClasses/application/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComplexityClasses/application/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algoritms/np/CliqueTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algoritms/np/CliqueTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algoritms/np/TravellingSalesmanProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algoritms/np/TravellingSalesmanProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algoritms/p/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algoritms/p/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/sample.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

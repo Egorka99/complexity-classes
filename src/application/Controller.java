@@ -79,6 +79,7 @@ public class Controller {
 
     @FXML
     void cliqueButton_click(ActionEvent event) {
+        try {
         int countV = Integer.parseInt(cliqueVCountTextBox.getText());
         String input = cliqueLinksTextBox.getText();
         String[] lines = input.split("\\n");
@@ -109,6 +110,12 @@ public class Controller {
 
         ObservableList<String> listOfItems = FXCollections.observableArrayList(cliqueTask.getResult());
         cliqueResultTextBox.setItems(listOfItems);
+        }
+        catch (Exception ex) {
+            Alert errorAlert = new Alert(AlertType.ERROR);
+            errorAlert.setHeaderText("Ошибка");
+            errorAlert.show();
+        }
     }
 
     @FXML
@@ -147,6 +154,7 @@ public class Controller {
 
     @FXML
     void tspButton_click(ActionEvent event) {
+        try {
         String input = tspMatrixTextBox.getText();
         Integer N = Integer.parseInt(tspCitiesCountTextBox.getText());
 
@@ -173,5 +181,11 @@ public class Controller {
         travellingSalesmanProblem.permutation(1);
         ObservableList<String> listOfItems = FXCollections.observableArrayList(travellingSalesmanProblem.getResult());
         tspResultListBox.setItems(listOfItems);
+        }
+        catch (Exception ex) {
+            Alert errorAlert = new Alert(AlertType.ERROR);
+            errorAlert.setHeaderText("Ошибка");
+            errorAlert.show();
+        }
     }
 }
