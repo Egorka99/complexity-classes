@@ -1,10 +1,16 @@
 package algoritms.np;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TravellingSalesmanProblem
 {
     private int N; //число городов
     private int[][] dists; // матрица расстояний
     private int[] cities;
+    List<String> result = new ArrayList<>();
+
+
 
     public TravellingSalesmanProblem(int[][] dists)
     {
@@ -17,14 +23,14 @@ public class TravellingSalesmanProblem
         }
     }
 
-    public void permutation( int lf) {
+    public void permutation(int lf) {
         if(lf >= cities.length)
         {  // перестановки окончены
-            print(calculateDistance(dists));// выводим перестановку
+            print(calculateDistance(dists));
             return;
         }
 
-        permutation( lf+1);                                // перестановки элементов справа от lf
+        permutation(lf+1);                                // перестановки элементов справа от lf
         for(int i=lf+1; i < cities.length; i++){           // теперь каждый элемент ar[i], i > lf
             swap( lf, i);                            // меняем местами с ar[lf]
             permutation( lf+1 );                            // и снова переставляем всё справа
@@ -45,9 +51,8 @@ public class TravellingSalesmanProblem
             roadSB.append(item).append("->");
         }
         String road = roadSB.substring(0,roadSB.length() - 2);
-        System.out.print(road);
-        System.out.print(" distance = " + d);
-        System.out.print('\n');
+        result.add(road);
+        result.add("distance = " + d);
     }
 
     private int calculateDistance(int[][] dists)
@@ -58,17 +63,7 @@ public class TravellingSalesmanProblem
         return d;                                      // длина пути перестановки ar
     }
 
-
-    public static void main(String[] args) {
-        int[][] dists = new int[][] {
-                {0,20,42,35},
-                {20,0,30,34},
-                {42,30,0,12},
-                {35,34,12,0},
-        };
-        TravellingSalesmanProblem travellingSalesmanProblem = new TravellingSalesmanProblem(dists);
-
-        travellingSalesmanProblem.permutation(1);
-
+    public List<String> getResult() {
+        return result;
     }
 }

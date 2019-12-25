@@ -1,6 +1,6 @@
 package algoritms.p;
 
-class Point {
+public class Point {
     double x;
     double y;
 

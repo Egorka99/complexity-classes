@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="668.0" xmlns:con="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="668.0" xmlns:con="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <TabPane prefHeight="508.0" prefWidth="668.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -66,19 +60,25 @@
                               <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                        <children>
-                                          <Label layoutX="37.0" layoutY="58.0" text="Матрица расстояний:">
+                                          <Label layoutX="42.0" layoutY="115.0" text="Матрица расстояний:">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
                                           </Label>
-                                          <TextArea fx:id="tspMatrixTextBox" layoutX="38.0" layoutY="90.0" prefHeight="131.0" prefWidth="136.0" />
+                                          <TextArea fx:id="tspMatrixTextBox" layoutX="43.0" layoutY="147.0" prefHeight="131.0" prefWidth="136.0" />
                                           <Label layoutX="302.0" layoutY="58.0" text="Способы обхода городов и общее расстояние:">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
                                           </Label>
                                           <ListView fx:id="tspResultListBox" layoutX="334.0" layoutY="100.0" prefHeight="200.0" prefWidth="258.0" />
-                                          <Button fx:id="tspButton" layoutX="68.0" layoutY="235.0" mnemonicParsing="false" onAction="#tspButton_click" prefHeight="22.0" prefWidth="77.0" text="Вычислить" />
+                                          <Button fx:id="tspButton" layoutX="73.0" layoutY="292.0" mnemonicParsing="false" onAction="#tspButton_click" prefHeight="22.0" prefWidth="77.0" text="Вычислить" />
+                                          <Label layoutX="63.0" layoutY="22.0" text="Число городов">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tspCitiesCountTextBox" layoutX="37.0" layoutY="56.0" />
                                        </children>
                                     </AnchorPane>
                               </content>
@@ -110,17 +110,16 @@
                                                 <Font size="18.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="primeNumberResultMessage" layoutX="513.0" layoutY="245.0" prefHeight="27.0" prefWidth="10.0">
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
                                           <Button fx:id="primeNumberButton" layoutX="232.0" layoutY="139.0" mnemonicParsing="false" onAction="#primeNumberButton_click" text="Является ли число простым?">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
                                           </Button>
-                                          <Label fx:id="test" layoutX="335.0" layoutY="241.0" text="Label1" />
+                                          <Label fx:id="test" layoutX="314.0" layoutY="190.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Label>
+                                          <Label fx:id="ResultMessage" layoutX="320.0" layoutY="191.0" />
                                        </children>
                                     </AnchorPane>
                               </content>
@@ -164,11 +163,7 @@
                                                 <Font size="18.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="minDistResultMessage" layoutX="335.0" layoutY="237.0" prefHeight="27.0" prefWidth="7.0">
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
+                                          <Label fx:id="minDistResultMessage" layoutX="335.0" layoutY="242.0" />
                                        </children>
                                     </AnchorPane>
                               </content>
